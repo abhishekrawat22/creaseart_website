@@ -1,0 +1,495 @@
+/* Reesponsive queries for Index.html*/
+
+/* -------------------5 July 2019---------------------- */
+
+@media (max-width: 320px) {
+
+	.logotop img {
+		width: 3.5em;
+		height: 3.5em;
+	}
+	
+	.carousel-item .carousel-image{
+		height: 9em;
+	}
+
+	.carousel-caption {
+		bottom: 0px;
+		top: 0em;
+		display: grid;
+		grid: auto/ 1fr;
+	}
+
+	.carousel-caption #hr-3 {
+		width: 8em;
+		margin-left: 0.5em;
+		margin-top: 0em;	
+	}
+
+	.carousel-caption .imgOne {
+		width: 4em;
+		margin-top: -0.5em;
+		margin-left: 0.5em;
+	}
+
+	.carousel-caption h3{
+		font-size: 0.75em;
+	}
+	
+	.eventbutton #carousel-button{
+		margin-top: -4em;
+		width: 12em;
+		font-size: 0.5em;
+		padding: 0.75em 0.75em;
+		border-radius: 4px;
+	}
+
+	.carousel-caption p{
+		margin-top: 0em;
+		font-size: 0.5em;
+		margin-bottom: -4em;
+		word-spacing: 0.25em;
+	}
+
+	.carousel-caption img{
+		margin-bottom: 0.25em;
+		margin-top: -2em;
+	}
+	
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		width: 10px;
+		height: 10px;
+	}
+
+	.carousel-indicators li{
+		top: 1.25em;
+		width: 8px;
+		height: 8px;
+		z-index: -99;
+	}
+
+	.banner img {
+		height: 7em;
+	}
+	
+	.top-right {
+		font-size: 8px;
+		position: absolute;
+		top: 16px !important;
+		right: 6px !important;
+	}
+
+	.banner .hrimg {
+		height: 1em;
+	}
+	
+	.abouttext h6 {
+		margin-bottom: -19px;
+		font-size: 7px;
+	}
+
+	.aboutUs-col {
+		display: grid;
+		grid: auto/1fr;
+		margin-top: 2em;
+	}
+
+	.aboutUs-col h4{
+		font-size: 0.75em;
+		margin-left: 20.5em;
+		margin-top: 0.25em
+	}
+
+	.aboutUs-col img{
+		width: 12em;
+		height: 1em;
+		margin-left: 16.5em;
+	}
+
+	.aboutUs-col .abouttext {
+		margin-top: -2em;
+		margin-left: 7.75em;
+		padding-top: 0.75em;	
+	}
+
+	.aboutUs-col h6{
+		font-size: 0.75em;
+		margin-left: 10em;
+		
+	}
+
+	.aboutUs-col .expand-button {
+		width: 12em;
+		font-size: 0.75em;
+		padding: 0.5em 0.75em;
+		margin-left: 20.5em;
+		margin-top: -4em;
+		margin-bottom: 1.5em;
+	}
+
+	.event_section h4, .classsec h4, .newsandarticles h4, .gallreysec h2, .musicalbum h4{
+		font-size: 1.25em;
+	}
+
+	.card-deck {
+		margin-top: -2em;
+	}
+
+	.card-title {
+		font-size: 0.85em;
+	}
+
+	.viewmoreevent {
+		padding-top: 10px;
+	}
+
+	.expand-button {
+		font-size: 0.75em;
+	}
+	.classsec .hrimg {
+		margin-bottom: 50px;
+	}
+
+	.classsec .hrimg img {
+		width: 15em;
+		margin-left: -29px;
+	}
+	.classsec .class-hr {
+		width: 6em;
+		height: 0.5em;
+		margin-bottom: 20px;
+	}
+
+	.viewmoreclass {
+		margin: 0.75em;
+		padding-top: 10px;
+	}
+
+	.viewmorenews {
+		padding-top: 10px;
+	}
+	
+	.gallreysec .text-center img {
+		width: 15em;
+		margin-left: 4px;
+	}
+
+	.gallreysec .class-hr-2 {
+		width: 6em;
+		height: 0.5em;
+		margin-bottom: 20px;
+	}
+
+	.gallreysec .img1 {
+		padding: 0.5em;
+	}
+
+	.overlay {
+		opacity: 0.7;
+	}
+
+	.viewmoremusic {
+		margin-top: 1.5em;
+	}
+	
+	.footer {
+		padding-bottom: 0px;
+	}
+	.col-sm-3.footer-widget1, .col-sm-3.footer-widget2, .col-sm-3.footer-widget3, .col-sm-3.footer-widget4 {
+		padding-left: 0em;
+		margin-bottom: 1em;
+		top: -1em;
+	}
+
+	.col-sm-3.footer-widget1 p {
+		font-size: 1em;
+		color: #fff;
+	}
+
+	.col-sm-3.footer-widget2 h6 {
+		margin-left: -9.25em;
+	}
+
+	.copyrighttext {
+		margin: 1em;
+	}
+}
+
+@media (max-width: 375px) {
+
+	#navbarSupportedContent ul {
+ 		flex-flow: column;
+ 	}
+
+	html {
+		margin-right: auto;
+	}
+
+	.logotop {
+		margin-left: -0.5em;
+		margin-top: -0.5em;
+	}
+
+	.logotop img {
+		width: 3.5em;
+		height: 3.5em;
+	}
+
+	.carousel-item .carousel-image{
+		height: 9em;
+	}
+
+	.carousel-caption {
+		/* bottom: 6px; */
+		top: 0em;
+		display: grid;
+		grid: auto/ 1fr;
+	}
+
+	.carousel-caption #hr-3 {
+		width: 8em;
+		margin-left: 0.5em;
+		margin-top: 0em;	
+	}
+
+	.carousel-caption .imgOne {
+		width: 4em;
+		margin-top: -0.5em;
+		margin-left: 0.5em;
+	}
+
+	.carousel-caption h3{
+		font-size: 0.75em;
+	}
+	
+	.eventbutton #carousel-button{
+		margin-top: -4em;
+		width: 12em;
+		font-size: 0.5em;
+		padding: 0.75em 0.75em;
+		border-radius: 4px;
+	}
+
+	.carousel-caption p{
+		margin-top: 0em;
+		font-size: 0.5em;
+		margin-bottom: -4em;
+		word-spacing: 0.25em;
+	}
+
+	.carousel-caption img{
+		margin-bottom: 0.25em;
+		margin-top: -0.5em;
+		width: 12.5em;
+		padding-left: 0em;
+	}
+	
+	.eventbutton .section2btn, .top-right a {
+		padding: 5px;
+		font-size: 8px;
+	}
+	
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		width: 10px;
+		height: 10px;
+	}
+
+	.carousel-indicators li{
+		top: 1.25em;
+		width: 8px;
+		height: 8px;
+		z-index: -99;
+	}
+
+	.banner img {
+		height: 7em;
+	}
+	
+	.top-right .hrimg {
+    	margin-bottom: 7px;
+	}
+	.aboutUs-col {
+		display: grid;
+		grid: auto/1fr;
+		margin-top: 2em;
+	}
+
+	.aboutUs-col h4{
+		font-size: 0.75em;
+		margin-left: 20.5em;
+		margin-top: 0.25em
+	}
+
+	.aboutUs-col img{
+		width: 12em;
+		height: 1em;
+		margin-left: 16.5em;
+	}
+
+	.aboutUs-col .abouttext {
+		margin-top: -2em;
+		margin-left: 7.75em;
+		padding-top: 0.75em;	
+	}
+
+	.aboutUs-col h6{
+		font-size: 0.75em;
+		margin-left: 10em;
+		
+	}
+
+	.aboutUs-col .expand-button {
+		width: 12em;
+		font-size: 0.75em;
+		padding: 0.5em 0.75em;
+		margin-left: 20.5em;
+		margin-top: -4em;
+		margin-bottom: 1.5em;
+	}
+
+	.event_section h4, .classsec h4, .newsandarticles h4, .gallreysec h2, .musicalbum h4{
+		font-size: 1.25em;
+	}
+
+	.card-deck {
+		margin-top: -2em;
+	}
+
+	.card-title {
+		font-size: 0.85em;
+	}
+
+	.viewmoreevent {
+		padding-top: 10px;
+	}
+
+	.expand-button {
+		font-size: 0.75em;
+	}
+
+	.classsec .class-hr {
+		width: 6em;
+		height: 0.5em;
+		margin-bottom: 20px;
+	}
+
+	.viewmoreclass {
+		margin: 0.75em;
+		padding-top: 10px;
+	}
+
+	.viewmorenews {
+		padding-top: 10px;
+	}
+
+	.gallreysec .class-hr-2 {
+		width: 6em;
+		height: 0.5em;
+		margin-bottom: 20px;
+	}
+
+	.gallreysec .img1 {
+		padding: 0.5em;
+	}
+
+	.overlay {
+		opacity: 0.7;
+	}
+
+	.viewmoremusic {
+		margin-top: 1.5em;
+	}
+	
+	.footer {
+		padding-bottom: 0px;
+	}
+	.col-sm-3.footer-widget1, .col-sm-3.footer-widget2, .col-sm-3.footer-widget3, .col-sm-3.footer-widget4 {
+		padding-left: 0em;
+		margin-bottom: 1em;
+		top: -1em;
+	}
+
+	.col-sm-3.footer-widget1 p {
+		font-size: 1em;
+		color: #fff;
+	}
+
+	.col-sm-3.footer-widget2 h6 {
+		margin-left: -9.25em;
+	}
+
+	.copyrighttext {
+		margin: 1em;
+	}
+}
+
+/* .closebtn, .ham-icon {
+		display: block;
+	}
+
+	.ham-icon {
+		border-radius: 100px;
+		padding: 0px 14px;
+		background-color: #fff;
+		color: rgba(238, 35, 17, 1);  
+		position: absolute;
+		top: 25px;
+		right: 5%;
+		font-size: 34px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+	}
+
+	#navbarSupportedContent {
+	    height: 100%;
+	    width: 0;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    background-color: rgba(0, 17, 113, 0.9);
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	}
+
+	#navbarSupportedContent ul {
+	    position: relative;
+	    top: 20%;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 30px;
+	}
+
+	#navbarSupportedContent ul li a {
+	    padding: 8px;
+	    text-decoration: none;
+	    font-size: 20px;
+	    color: #fff;
+	    display: block;
+	    transition: 0.3s;
+	}
+
+	#navbarSupportedContent ul li a:hover, #navbarSupportedContent ul li a:focus {
+	    color: #f1f1f1;
+	}
+
+	#navbarSupportedContent .closebtn {
+	    position: absolute;
+	    top: 20px;
+	    right: 45px;
+	    font-size: 60px;
+	}
+
+  	#navbarSupportedContent .closebtn {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	 } */
+
+
+
+
+/* home.css */
+#first_name::placeholder, #last_name::placeholder, #email::placeholder{
+    color: #fff !important;
+}
+/project/perth_tango/template/default/css
