@@ -1,12 +1,18 @@
+// Remove Cart Item
 let deleteCross = document.getElementsByClassName("cart_item");
+let price = document.getElementsByClassName("price");
+let subTotal = document.getElementsByClassName("sub_price");
+let orderTotal = document.getElementsByClassName("price_total");
 
-let deleteItem = () => {
-    // deleteCross.parentNode.style.display = "none";
-    // deleteCross.addClass = "delete_item";
-    deleteCross.parentNode.removeChild(deleteCross);
+let deleteItem = (deleteCross) => {
+    subTotal.value = subTotal.value - price.value;
+    orderTotal.value = orderTotal.value - price.value;
+    let row = deleteCross.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+    subTotal.innerHTML = "subTotal.value";
+    orderTotal.innerHTML = "orderTotal.value";
 }
 
-document.getElementById("delete_btn").addEventListener("click", deleteItem);
 
 // Checkout box Interaction
 $('.input-cart-number').on('keyup change', function(){
@@ -58,19 +64,20 @@ $('#card-ccv').focus().delay(1000).queue(function(){
 });
 }, 500);
 
-/*function getCreditCardType(accountNumber) {
-if (/^5[1-5]/.test(accountNumber)) {
-    result = 'mastercard';
-} else if (/^4/.test(accountNumber)) {
-    result = 'visa';
-} else if ( /^(5018|5020|5038|6304|6759|676[1-3])/.test(accountNumber)) {
-    result = 'maestro';
-} else {
-    result = 'unknown'
-}
-return result;
+function getCreditCardType(accountNumber) {
+    if (/^5[1-5]/.test(accountNumber)) {
+        result = 'mastercard';
+    } else if (/^4/.test(accountNumber)) {
+        result = 'visa';
+    } else if ( /^(5018|5020|5038|6304|6759|676[1-3])/.test(accountNumber)) {
+        result = 'maestro';
+    } else {
+        result = 'unknown'
+    }
+    return result;
 }
 
 $('#card-number').change(function(){
-console.log(getCreditCardType($(this).val()));
-})*/
+    let cardTypeValue = (getCreditCardType($(this).val()));
+    document.getElementsByClassName("card_type").innerText = cardTypeValue.value;
+})
