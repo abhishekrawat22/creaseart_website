@@ -211,8 +211,8 @@
                     <span>Shirt</span>
                     <span>2</span>
                     <span>Iron & Fold</span>
-                    <span>120</span>
-                    <span class="cart_item-delete"><button id="delete_btn">&times;</button></span>
+                    <span class="price">120</span>
+                    <span class="cart_item-delete"><button type="button" id="delete_btn" onclick="deleteItem(this)">&times;</button></span>
 
                 </div>
 
@@ -221,8 +221,8 @@
                     <span>Blazer</span>
                     <span>1</span>
                     <span>Dry Clean</span>
-                    <span>240</span>
-                    <span class="cart_item-delete"><button id="delete_btn">&times;</button></span>
+                    <span class="price">240</span>
+                    <span class="cart_item-delete"><button type="button" id="delete_btn" onclick="deleteItem(this)">&times;</button></span>
 
                 </div>
 
@@ -231,8 +231,8 @@
                     <span>Jeans</span>
                     <span>4</span>
                     <span>Dry Clean</span>
-                    <span>320</span>
-                    <span class="cart_item-delete"><button id="delete_btn">&times;</button></span>
+                    <span class="price">320</span>
+                    <span class="cart_item-delete"><button type="button" id="delete_btn" onclick="deleteItem(this)">&times;</button></span>
 
                 </div>
 
@@ -243,7 +243,7 @@
                 <div class="price_item">
 
                     <span>Subtotal</span>
-                    <span>&#8377; 680</span>
+                    <span class="sub_price">&#8377; 680</span>
     
                 </div>
     
@@ -271,7 +271,7 @@
                 <div class="price_item order_total">
     
                     <span>Order Total</span>
-                    <span>&#8377; 670</span>
+                    <span class="price_total">&#8377; 670</span>
     
                 </div>
 
@@ -350,6 +350,7 @@
                                             </g>
                                         </g>
                                     </svg>
+                                    <div class="card_type"></div>
                                 </div>
                                 <div class="number"></div>
                                 <div class="card-holder">
@@ -454,7 +455,7 @@
                             <label for="card-ccv">CCV</label>
                             <input type="password" id="card-ccv" maxlength="3" />
                         </fieldset>
-                        <button class="btn"><i class="fa fa-lock"></i> submit</button>
+                        <button class="btn"><i class="fa fa-lock"></i> checkout</button>
                     </form>
                 </div>
 
