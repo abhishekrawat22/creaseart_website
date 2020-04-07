@@ -10,6 +10,7 @@ body {
   font-size: 20px;
   overflow-x: hidden;
   background-color: #E5E7EB;
+  font-family: 'Poppins', sans-serif;
 }
 
 body .header {

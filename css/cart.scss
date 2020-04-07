@@ -11,6 +11,7 @@ body {
     font-size: 20px;
     overflow-x: hidden;
     background-color: #E5E7EB;
+    font-family: 'Poppins', sans-serif;
 
     // Header Navigation
     .header {
@@ -414,13 +415,13 @@ body {
                 Checkout
                 --------------------*/
                 .checkout {
-                margin: 130px auto 30px;
-                position: relative;
-                width: 460px;
-                background: #363435;
-                border-radius: 15px;
-                padding: 160px 45px 30px;
-                box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
+                    margin: 130px auto 30px;
+                    position: relative;
+                    width: 460px;
+                    background: #363435;
+                    border-radius: 15px;
+                    padding: 160px 45px 30px;
+                    box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
                 }
                 
                 /*--------------------
