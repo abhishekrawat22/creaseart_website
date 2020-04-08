@@ -21,7 +21,7 @@ inputs.forEach(input => {
 
 // Password Validation Code
 
-const pass = document.querySelector('.password-input');
+const pass = document.querySelector('.signUppassword-input');
 const confirmPass = document.querySelector('.confirm_password-input');
 const error = document.querySelector('.error-message');
 const timeout = null;

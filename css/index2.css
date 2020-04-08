@@ -25,7 +25,8 @@ body p {
 
 body .header {
   height: 90vh;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 body .header .logo-box {
@@ -247,6 +248,11 @@ body .header .header_content .spinner-box .spinner {
   }
 }
 
+body main {
+  position: absolute;
+  top: 90%;
+}
+
 body main .home_coupons .carousel-inner {
   display: none;
 }
@@ -339,6 +345,24 @@ body main .why_choose .why_choose_col2 {
   margin-bottom: 20px;
 }
 
+body main .why_choose .why_choose_col1 .why_choose_box:nth-child(1), body main .why_choose .why_choose_col1 .why_choose_box:nth-child(3) {
+  bottom: 50px;
+}
+
+body main .why_choose .why_choose_col1 .why_choose_box:nth-child(1) .description, body main .why_choose .why_choose_col1 .why_choose_box:nth-child(3) .description {
+  -webkit-animation: float 3s ease infinite;
+          animation: float 3s ease infinite;
+}
+
+body main .why_choose .why_choose_col2 .why_choose_box:nth-child(1), body main .why_choose .why_choose_col2 .why_choose_box:nth-child(3) {
+  top: 50px;
+}
+
+body main .why_choose .why_choose_col2 .why_choose_box:nth-child(1) .description, body main .why_choose .why_choose_col2 .why_choose_box:nth-child(3) .description {
+  -webkit-animation: float 3s ease-out infinite;
+          animation: float 3s ease-out infinite;
+}
+
 body main .why_choose .why_choose_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +387,10 @@ body main .why_choose .why_choose_box .description {
   transition: 0.3s;
   background-color: white;
   border-radius: 8px;
+  text-align: center;
+  border: none;
+  -webkit-animation: reverseFloat 3s infinite 1.5s;
+          animation: reverseFloat 3s infinite 1.5s;
 }
 
 body main .why_choose .why_choose_box .description:hover {
@@ -376,12 +404,95 @@ body main .why_choose .why_choose_box .description h4 {
   font-size: 20px;
 }
 
+body main .why_choose .why_choose_box .description p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+body main .why_choose .why_choose_box:nth-child(1) {
+  position: relative;
+  left: -100px;
+}
+
+body main .why_choose .why_choose_box:nth-child(3) {
+  position: relative;
+  right: -100px;
+}
+
 body main .pattern_two {
   background: url(img/pattern_two.svg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
   margin-top: -3rem;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@-webkit-keyframes reverseFloat {
+  0% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+  }
+  50% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+  }
+}
+
+@keyframes reverseFloat {
+  0% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+  }
+  50% {
+    -webkit-box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+            box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+  }
 }
 
 @media screen and (max-width: 1024px) {

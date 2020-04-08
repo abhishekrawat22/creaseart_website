@@ -29,7 +29,8 @@ body {
 
     .header {
         height: 90vh;
-        position: relative;
+        position: absolute;
+        width: 100%;
 
         .logo-box {
             position: absolute;
@@ -230,6 +231,8 @@ body {
     }
 
     main{
+        position: absolute;
+        top: 90%;
         .home_coupons {
             .carousel-inner {    
                 display: none;            
@@ -311,6 +314,42 @@ body {
                 margin-bottom: 20px;
             }
 
+            .why_choose_col1 {
+                .why_choose_box {
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        bottom: 50px;
+
+                        .description {
+                            // box-shadow: 0 4px 50px -1px rgba(0, 0, 0, 0.2);
+                            animation: float 3s ease infinite;
+
+                            // &:hover {
+                            //     box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+                            // }
+                        }
+                    }
+                }
+            }
+
+            .why_choose_col2 {
+                .why_choose_box {
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        top: 50px;
+
+                        .description {
+                            // box-shadow: 0 4px 50px -1px rgba(0, 0, 0, 0.2);
+                            animation: float 3s ease-out infinite;
+
+                            // &:hover {
+                            //     box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+                            // }
+                        }
+                    }
+                }
+            }
+
             .why_choose_box {
                 display: flex;
                 width: 100%;
@@ -329,6 +368,9 @@ body {
                     transition: 0.3s;
                     background-color: rgb(255, 255, 255);
                     border-radius: 8px;
+                    text-align: center;
+                    border: none;
+                    animation: reverseFloat 3s infinite 1.5s;
 
                     &:hover {
                         transition: 0.3s;
@@ -338,6 +380,22 @@ body {
                     h4 {
                         font-size: 20px;
                     }
+
+                    p {
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &:nth-child(1) {
+                    position: relative;
+                    left: -100px;
+                }
+
+                &:nth-child(3) {
+                    position: relative;
+                    right: -100px;
                 }
             }
         }
@@ -349,6 +407,40 @@ body {
             height: 270px;
             margin-top: -3rem;
         }
+    }
+}
+
+@keyframes float {
+
+    0% {
+        // transform: translateY(0px);
+        box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        // transform: translateY(10px);
+        box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+        transform: scale(1.05);
+    }
+    100% {
+        // transform: translateY(0px);
+        box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes reverseFloat {
+
+    0% {
+        // transform: translateY(0px);
+        box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
+    }
+    50% {
+        // transform: translateY(10px);
+        box-shadow: 0 4px 30px -1px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+    100% {
+        // transform: translateY(0px);
+        box-shadow: 0 0 100px -3px rgba(70, 5, 5, 0.1);
     }
 }
     
