@@ -16,6 +16,12 @@ body {
 	font-family: "Poppins", sans-serif;
     font-weight: 400;
     // background-color: #F1F1F1;
+
+    #particles-js {
+        background-color: #352384;
+        background-image: linear-gradient(315deg, #352384 0%, #f3f3f5 74%);
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Lato', sans-serif;
         color: #363435;
@@ -247,9 +253,10 @@ body {
                     border-style: none;
                     width: 30%;
                     padding: 20px 10px;
-                    box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.3);
                     border-radius: 8px;
                     margin: 1rem;
+                    background-color: #fff;
                 }
             }
 
