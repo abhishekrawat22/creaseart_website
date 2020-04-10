@@ -12,6 +12,6 @@ contactIcon.onclick = () => {
 }
 
 crossIcon.onclick = () => {
-    contactUs.style.display = 'none'; 
+    contactUs.style.display = 'none';
     contactIcon.style.display = 'block';
 }

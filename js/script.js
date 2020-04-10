@@ -1,17 +1,17 @@
 
 
 function tableContentPanel(evt, contentId) {
-    
+
   let i, tableTabcontent, tableTabLinks;
-  
+
   tableTabcontent = document.getElementsByClassName("tableTab-content");
-  
+
   for (i = 0; i < tableTabcontent.length; i++) {
-      
+
     tableTabcontent[i].style.display = "none";
 
   }
-  
+
   tableTabLinks = document.getElementsByClassName("tableTabLinks");
 
   for (i = 0; i < tableTabLinks.length; i++) {
@@ -34,6 +34,7 @@ function tableContentPanel(evt, contentId) {
 
 }
 
+// For mobile menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
