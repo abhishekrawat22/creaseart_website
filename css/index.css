@@ -554,6 +554,15 @@ body footer .footer_sections .col-md a {
   }
 }
 
+@media (max-width: 1199px) {
+  body .header .logo-box {
+    left: 3%;
+  }
+  body .header .nav-box {
+    right: 3%;
+  }
+}
+
 @media (max-width: 991px) {
   body .header .logo-box .logo {
     height: 60px;
