@@ -16,9 +16,27 @@ body {
 
         .vendor_list_nav_one {
             padding-left: 60px;
+            display: flex;
+            align-items: center;
+
             .logo {
                 height: 60px;
                 margin-right: 40px;
+            }
+
+            .address_search {
+                width: 200px;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1.5px solid #646464;
+                font-size: 14px;
+                background-color: white;
+                background-image: url('./img/search-icon.png');
+                background-position: 10px -1px; 
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 0 20px 0 40px;
+                outline: none;
             }
         }
 
@@ -501,5 +519,15 @@ body {
     body main .vendor_list .row .card {
         max-width: 90%;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 414px) {
+    body .vendor_list_nav .vendor_list_nav_one .logo {
+        margin-right: 20px;
+    }
+
+    body .vendor_list_nav .vendor_list_nav_one .address_search {
+        width: 130px;
     }
 }
