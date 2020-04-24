@@ -39,6 +39,7 @@ body .vendor_list_nav .vendor_list_nav_two {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 40%;
 }
 
 body .vendor_list_nav .vendor_list_nav_two input[type=text] {
