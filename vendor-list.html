@@ -29,19 +29,20 @@
 
         <!-- Menu starts -->
         <div id="myNav" class="vendor_list_nav_two vendor_overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- Cross icon which will appear when login/sign up form appears from side bar -->
             <div class="vendor_content">
+                <!-- Search within web page -->
                 <form>
                     <input type="text" name="search" placeholder="Search..">
                 </form>
 
-                <span><a href="#"><i class="fa fa-percent"></i> Offers</a></span>
-                <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span>
+                <span><a href="#"><i class="fa fa-percent"></i> Offers</a></span> <!-- Link to discounts offered by various vendors -->
+                <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span> <!-- Help link related to the website -->
                 <span><a href="#signup" onclick="openSignform()"><i class="fa fa-user"></i> Sign Up</a></span>
                 <span><a href="#" onclick="openSignform()"><i class="fa fa-shopping-cart"></i> Cart</a></span>
             </div>
         </div>
-        <span class="ham-icon" onclick="openNav()">&#9776;</span>
+        <span class="ham-icon" onclick="openNav()">&#9776;</span> <!-- Hamburger icon which will appear in place of menu in mobile view -->
 
         <!-- Login Form Starts -->
         <div id="login" class="nav-box overlay">
@@ -139,6 +140,7 @@
     </header>
 
     <main class="container">
+        <!-- Filter section to select vendors according to the preference -->
         <div class="filter row">
             <span class="filter_head col-md-3"><i class="fa fa-filter"></i> Filters</span>
             <span class="filter_types col-md-9">
@@ -174,10 +176,11 @@
             </span>
         </div>
 
+        <!-- Vendor Cards as per the location selected or detected -->
         <section class="vendor_list">
             <div class="row">
                 <div class="col-md-4 card">
-                    <img src="https:\/\/www.creaseart.com\/itf_public\/company_logo\/vendor_company1546411933.jpg" alt="Let's Laundry" class="company_logo">
+                    <a href="vendorDetails.html"><img src="https:\/\/www.creaseart.com\/itf_public\/company_logo\/vendor_company1546411933.jpg" alt="Let's Laundry" class="company_logo"></a>
                     <div class="vendor_about">
                         <h4 class="company_name">Let's Laundry</h4>
                         <p class="vendor_service">
@@ -192,7 +195,7 @@
                             <span class="vendor_distance">1.5 Km</span>                        
                         </div>
                     </div>
-                    <div class="vendor_continue">continue</div>
+                    <div class="vendor_continue"><a href="vendorDetails.html">continue</a></div>
                 </div>
                 <div class="col-md-4 card">
                     <img src="https://www.creaseart.com/itf_public\/company_logo\/vendor_company1546410272.jpg" alt="Let's Laundry" class="company_logo">
@@ -400,7 +403,6 @@
 
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
-    <!-- <script type="text/javascript" src="js/app.js"></script> -->
 
 </body>
 </html>
