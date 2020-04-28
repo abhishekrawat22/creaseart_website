@@ -197,10 +197,7 @@ nav {
                                 outline: none;
                                 margin-left: -5px;
                                 margin-right: -5px;
-
-                                &::placeholder {
-                                    text-align: center;
-                                }
+                                text-align: center;
                             }
 
                             button {
@@ -428,6 +425,10 @@ nav {
         font-size: 12px;
     }
 
+    .vendor_detail .detail_service_cart .service_order .nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+
     .vendor_detail .add-on_services .add-services {
         display: grid;
         justify-content: unset;
@@ -438,8 +439,14 @@ nav {
     }
 }
 
-@media (max-width: 353px) {
+@media (max-width: 375px) {
     .vendor_detail .detail_service_cart .service_order #myTabContent {
         padding: 0 1rem;
+    }
+}
+
+@media (max-width: 331px) {
+    .vendor_detail .detail_service_cart .service_order #myTabContent {
+        padding: 0 0.5rem;
     }
 }

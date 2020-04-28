@@ -213,21 +213,6 @@ nav .breadcrumb li a {
   outline: none;
   margin-left: -5px;
   margin-right: -5px;
-}
-
-.vendor_detail .detail_service_cart .detail_cart table tbody tr td input::-webkit-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .detail_cart table tbody tr td input:-ms-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .detail_cart table tbody tr td input::-ms-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .detail_cart table tbody tr td input::placeholder {
   text-align: center;
 }
 
@@ -437,6 +422,9 @@ nav .breadcrumb li a {
   .vendor_detail .vendor_detail_banner .vendor_detail_summary div span p {
     font-size: 12px;
   }
+  .vendor_detail .detail_service_cart .service_order .nav .nav-item .nav-link {
+    font-size: 14px;
+  }
   .vendor_detail .add-on_services .add-services {
     display: -ms-grid;
     display: grid;
@@ -449,9 +437,15 @@ nav .breadcrumb li a {
   }
 }
 
-@media (max-width: 353px) {
+@media (max-width: 375px) {
   .vendor_detail .detail_service_cart .service_order #myTabContent {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 331px) {
+  .vendor_detail .detail_service_cart .service_order #myTabContent {
+    padding: 0 0.5rem;
   }
 }
 /*# sourceMappingURL=vendor.css.map */
