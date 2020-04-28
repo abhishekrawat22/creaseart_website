@@ -161,21 +161,6 @@ nav .breadcrumb li a {
   outline: none;
   margin-left: -5px;
   margin-right: -5px;
-}
-
-.vendor_detail .detail_service_cart .service_order #myTabContent table td input::-webkit-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .service_order #myTabContent table td input:-ms-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .service_order #myTabContent table td input::-ms-input-placeholder {
-  text-align: center;
-}
-
-.vendor_detail .detail_service_cart .service_order #myTabContent table td input::placeholder {
   text-align: center;
 }
 
