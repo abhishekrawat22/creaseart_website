@@ -399,6 +399,9 @@ body main .vendor_list .row .card .vendor_continue {
   border: none;
   border-top: solid 1px #f7f7f7;
   padding-bottom: 0.5rem;
+}
+
+body main .vendor_list .row .card .vendor_continue a {
   color: #282c3f;
 }
 
@@ -522,6 +525,13 @@ body footer .footer_sections .col-md a {
 @media (max-width: 900px) {
   body .vendor_list_nav .vendor_list_nav_one {
     padding-left: unset;
+  }
+  body main .vendor_list .row .card {
+    -webkit-box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
+  }
+  body main .vendor_list .row .card .vendor_continue {
+    visibility: visible;
   }
 }
 
