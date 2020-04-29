@@ -162,12 +162,12 @@ nav .breadcrumb li a {
   margin-left: -5px;
   margin-right: -5px;
   text-align: center;
+  padding: 0.25rem 0;
 }
 
 .vendor_detail .detail_service_cart .service_order #myTabContent table td button {
   background-color: #fff;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding: 0.25rem;
   border: solid 0.3px #707070;
   outline: none;
   cursor: pointer;
@@ -214,12 +214,12 @@ nav .breadcrumb li a {
   margin-left: -5px;
   margin-right: -5px;
   text-align: center;
+  padding: 0.25rem 0;
 }
 
 .vendor_detail .detail_service_cart .detail_cart table tbody tr td button {
   background-color: #fff;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding: 0.25rem;
   border: solid 0.3px #707070;
   outline: none;
   cursor: pointer;
