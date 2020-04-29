@@ -93,6 +93,8 @@ body .header .overlay {
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
 }
 
 body .header .overlay .overlay-content {

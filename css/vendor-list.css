@@ -112,6 +112,8 @@ body .vendor_list_nav .overlay {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 9;
+  -webkit-box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
 }
 
 body .vendor_list_nav .overlay .overlay-content {
