@@ -36,7 +36,7 @@
 
 // For login side bar
 function openLogform() {
-  document.getElementById("login").style.width = "25%";
+  document.getElementById("login").style.width = "310px";
   document.getElementById("signup").style.width = "0%";
 }
 
@@ -46,7 +46,7 @@ function closeLogform() {
 
 // For signup side bar
 function openSignform() {
-  document.getElementById("signup").style.width = "25%";
+  document.getElementById("signup").style.width = "310px";
   document.getElementById("login").style.width = "0%";
 }
 
