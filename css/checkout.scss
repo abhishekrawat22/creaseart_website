@@ -194,13 +194,13 @@ body {
                             width: 100%;
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             th {
                                 padding-top: 1rem;
                             }
                         }
 
-                        &:nth-child(6) {
+                        &:nth-child(5) {
                             td {
                                 padding-bottom: 0.75rem;
                             }
@@ -226,28 +226,40 @@ body {
                         }
                     }
 
-                    #coupon_section {
-                        display: none;
-                        transition: 0.3s;
+                    #enter_coupon {
 
-                        td {
-                            display: flex;
+                        .modal-dialog {
 
-                            .coupon_code {
-                                border: none;
-                                border-bottom: solid 1.5px #646464;
-                                font-size: 15px;
-                                transition: 0.3s;
-                                margin: 1rem 0;
-                                margin-right: 5px;
-                                outline: none;
-                            }
-    
-                            .apply {
-                                background-color: #bc3935;
-                                color: #fff;
-                                border: none;
-                                padding: 0.75rem;
+                            .modal-content {
+
+                                .modal-header {
+                                    button {
+                                        outline: none !important;
+                                    }
+                                }
+        
+                                .modal-body {
+        
+                                    input {
+                                        border: none;
+                                        border-bottom: solid 1.5px #646464;
+                                        font-size: 15px;
+                                        transition: 0.3s;
+                                        margin: 1rem 0;
+                                        margin-right: 5px;
+                                        outline: none;
+                                    }
+                                }
+        
+                                .modal-footer {
+        
+                                    .btn-primary {
+                                        background-color: #bc3935 !important;
+                                        color: #fff;
+                                        border: none;
+                                        padding: 0.75rem;
+                                    }
+                                }
                             }
                         }
                     }
@@ -339,5 +351,11 @@ body {
 
     body .checkout_section .detail_cart table tfoot tr button {
         padding: 0.75rem 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body header .vendor_list_nav_one h5 {
+        font-size: 18px;
     }
 }

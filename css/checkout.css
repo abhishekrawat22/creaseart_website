@@ -173,11 +173,11 @@ body .checkout_section .detail_cart table tfoot tr button {
   width: 100%;
 }
 
-body .checkout_section .detail_cart table tfoot tr:nth-child(3) th {
+body .checkout_section .detail_cart table tfoot tr:nth-child(2) th {
   padding-top: 1rem;
 }
 
-body .checkout_section .detail_cart table tfoot tr:nth-child(6) td {
+body .checkout_section .detail_cart table tfoot tr:nth-child(5) td {
   padding-bottom: 0.75rem;
 }
 
@@ -198,19 +198,11 @@ body .checkout_section .detail_cart table tfoot tr td {
   color: #646464;
 }
 
-body .checkout_section .detail_cart table tfoot #coupon_section {
-  display: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-header button {
+  outline: none !important;
 }
 
-body .checkout_section .detail_cart table tfoot #coupon_section td {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .checkout_section .detail_cart table tfoot #coupon_section td .coupon_code {
+body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-body input {
   border: none;
   border-bottom: solid 1.5px #646464;
   font-size: 15px;
@@ -221,8 +213,8 @@ body .checkout_section .detail_cart table tfoot #coupon_section td .coupon_code 
   outline: none;
 }
 
-body .checkout_section .detail_cart table tfoot #coupon_section td .apply {
-  background-color: #bc3935;
+body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-footer .btn-primary {
+  background-color: #bc3935 !important;
   color: #fff;
   border: none;
   padding: 0.75rem;
@@ -305,6 +297,12 @@ body .checkout_section .detail_cart table tfoot #coupon_section td .apply {
   }
   body .checkout_section .detail_cart table tfoot tr button {
     padding: 0.75rem 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  body header .vendor_list_nav_one h5 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=checkout.css.map */
