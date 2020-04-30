@@ -62,3 +62,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+// To apply coupon
+function openCoupon() {
+  document.getElementById("coupon_section").style.display = "block";
+}

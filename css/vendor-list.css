@@ -443,11 +443,6 @@ body footer .footer_sections {
   border-bottom: solid 0.05rem #fff;
 }
 
-body footer .footer_sections .col-md a {
-  color: #fff;
-  font-size: 1rem;
-}
-
 @media (max-width: 1199px) and (min-width: 992px) {
   .awselect .front_face .icon {
     right: -24px !important;
