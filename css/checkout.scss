@@ -225,44 +225,43 @@ body {
                             color: #646464;
                         }
                     }
+                }
+            }
+        }
+    }
+}
 
-                    #enter_coupon {
+#enter_coupon {
 
-                        .modal-dialog {
+    .modal-dialog {
 
-                            .modal-content {
+        .modal-content {
 
-                                .modal-header {
-                                    button {
-                                        outline: none !important;
-                                    }
-                                }
-        
-                                .modal-body {
-        
-                                    input {
-                                        border: none;
-                                        border-bottom: solid 1.5px #646464;
-                                        font-size: 15px;
-                                        transition: 0.3s;
-                                        margin: 1rem 0;
-                                        margin-right: 5px;
-                                        outline: none;
-                                    }
-                                }
-        
-                                .modal-footer {
-        
-                                    .btn-primary {
-                                        background-color: #bc3935 !important;
-                                        color: #fff;
-                                        border: none;
-                                        padding: 0.75rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
+            .modal-header {
+                button {
+                    outline: none;
+                }
+            }
+
+            .modal-body {
+
+                .coupon_code {
+                    border: none;
+                    border-bottom: solid 1.5px #646464;
+                    font-size: 15px;
+                    transition: 0.3s;
+                    margin: 1rem 0;
+                    margin-right: 5px;
+                    outline: none;
+                }
+            }
+
+            .modal-footer {
+
+                .apply {
+                    background-color: #bc3935;
+                    color: #fff;
+                    border: none;
                 }
             }
         }

@@ -198,11 +198,11 @@ body .checkout_section .detail_cart table tfoot tr td {
   color: #646464;
 }
 
-body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-header button {
-  outline: none !important;
+#enter_coupon .modal-dialog .modal-content .modal-header button {
+  outline: none;
 }
 
-body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-body input {
+#enter_coupon .modal-dialog .modal-content .modal-body .coupon_code {
   border: none;
   border-bottom: solid 1.5px #646464;
   font-size: 15px;
@@ -213,11 +213,10 @@ body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .mod
   outline: none;
 }
 
-body .checkout_section .detail_cart table tfoot #enter_coupon .modal-dialog .modal-content .modal-footer .btn-primary {
-  background-color: #bc3935 !important;
+#enter_coupon .modal-dialog .modal-content .modal-footer .apply {
+  background-color: #bc3935;
   color: #fff;
   border: none;
-  padding: 0.75rem;
 }
 
 @media (max-width: 1199px) {
