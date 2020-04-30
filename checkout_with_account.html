@@ -12,8 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="css/vendor-list.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/checkout_with_account.css">
+    
 
-    <title>Checkout : Creaseart</title>
+    <title>Checkout : Shakti Singh</title>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     <header class="vendor_list_nav">
 
         <div class="vendor_list_nav_one">
-            <a href="index.html"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a>
+            <a href="https://www.creaseart.com"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a>
             <h5>Secure Checkout</h5>
         </div>
 
@@ -40,104 +42,12 @@
                 <!-- Link to discounts offered by various vendors -->
                 <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span>
                 <!-- Help link related to the website -->
-                <span><a href="#signup" onclick="openSignform()"><i class="fa fa-user"></i> Sign Up</a></span>
+                <span><a href="checkout.html"><i class="fa fa-user"></i> Sign Out</a></span>
                 <span><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></span>
             </div>
         </div>
         <span class="ham-icon" onclick="openNav()">&#9776;</span>
         <!-- Hamburger icon which will appear in place of menu in mobile view -->
-
-        <!-- Login Form Starts -->
-        <div id="login" class="nav-box overlay">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeLogform()">&times;</a>
-
-            <div class="overlay-content">
-
-                <h4>Login</h4>
-
-                <div class="login-content">
-                    <form action="" class="form">
-
-                        <div class="input-div one">
-                            <div class="div">
-                                <h5>Phone No.*</h5>
-                                <input type="tel" class="input" autocomplete="tel" name="phone"
-                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
-                            </div>
-                        </div>
-
-                        <input type="submit" class="btn" value="Log In" onclick="location.href='checkout_with_account.html';">
-                        <p>or <span><a href="#signup" onclick="openSignform()">create an account</a></span></p>
-
-                    </form>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Login Forms ends -->
-
-        <!-- Sign Up form starts -->
-        <div id="signup" class="nav-box overlay">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeSignform()">&times;</a>
-
-            <div class="overlay-content">
-
-                <h4>Sign Up</h4>
-
-                <div class="login-content">
-                    <form action="" class="form">
-
-                        <div class="input-div one">
-                            <div class="div">
-                                <h5>Phone No.*</h5>
-                                <input type="tel" class="input" autocomplete="tel" name="phone"
-                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
-                            </div>
-                        </div>
-
-                        <div class="input-div one">
-                            <div class="div">
-                                <h5>Name*</h5>
-                                <input type="text" class="input" autocomplete="name" required>
-                            </div>
-                        </div>
-
-                        <div class="input-div one">
-                            <div class="div">
-                                <h5>Email*</h5>
-                                <input type="email" class="input" autocomplete="email" required>
-                            </div>
-                        </div>
-
-                        <div class="input-div pass">
-                            <div class="div">
-                                <h5>Password*</h5>
-                                <input type="password" class="input signUppassword-input" required>
-                            </div>
-                        </div>
-
-                        <div class="input-div confirm_pass">
-                            <div class="div">
-                                <h5>Confirm Password*</h5>
-                                <input type="password" class="input confirm_password-input" required>
-                            </div>
-                        </div>
-
-                        <p class="error-message"></p>
-
-                        <input type="submit" class="btn" value="Sign Up" onclick="location.href='checkout_with_account.html';">
-                        <p>or <span><a href="#login" onclick="openLogform()">login to your account</a></span></p>
-
-                    </form>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- Sign Up form ends -->
         <!-- Menu ends -->
         <!-- Navigation header ends-->
     </header>
@@ -153,37 +63,17 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                            Account
+                            Logged In <i class="fa fa-check"></i>
+                            <p>Shakti Singh</p>
                         </button>
                     </h2>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        To place your order now, login to your existing account or sign up.
-                        <div class="account_entry">
-                            <span class="login_btn">
-                                <button onclick="openLogform()">
-                                    <p>Have an account?</p>
-                                    <p>LOGIN</p>
-                                </button>
-                            </span>
-                            <span class="signup_btn">
-                                <button onclick="openSignform()">
-                                    <p>New to Creaseart?</p>
-                                    <p>SIGN UP</p>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <!-- Enter your delivery address -->
             <div class="card">
                 <div class="card-header" id="headingTwo">
-                    <span class="btn_symbol"><i class="fa fa-map-marker"></i></span>
+                    <span class="btn_symbol collapsed_icon"><i class="fa fa-map-marker"></i></span>
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
