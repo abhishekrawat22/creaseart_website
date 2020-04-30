@@ -67,11 +67,3 @@ pass.addEventListener('keyup', e => {
 	clearTimeout(timeout);
 	timeout = setTimeout(() => validatePassword(password), 400);
 });
-
-//Confirm Password
-const validateConfirmPassword = (pass, confirmPass) => {
-	if (pass.value === confirmPass.value) return true;
-	else {
-		showError("Entered password does not match.");
-	}
-}
