@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/vendor-list.css">
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/checkout_with_account.css">
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <title>Checkout : Shakti Singh</title>
 </head>
@@ -73,13 +73,47 @@
             <!-- Enter your delivery address -->
             <div class="card">
                 <div class="card-header" id="headingTwo">
-                    <span class="btn_symbol collapsed_icon"><i class="fa fa-map-marker"></i></span>
+                    <span class="btn_symbol"><i class="fa fa-map-marker"></i></span>
                     <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             Delivery Address
                         </button>
                     </h2>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="addresses">
+                            <div class="address">
+                                <span><i class="fa fa-home"></i></span>
+                                <span>
+                                    <h6>Home</h6>
+                                    <p class="home_address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, adipisci!</p>
+                                    <p class="delivery_time"><strong>44 MINS</strong></p>
+                                    <button type="submit" class="deliver_here">Deliver Here</button>
+                                </span>
+                            </div>
+                            <div class="address">
+                                <span><i class="fa fa-suitcase"></i></span>
+                                <span>
+                                    <h6>Work</h6>
+                                    <p class="work_address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, adipisci!</p>
+                                    <p class="delivery_time"><strong>50 MINS</strong></p>
+                                    <button type="submit" class="deliver_here">Deliver Here</button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="add_address">
+                            <div class="address">
+                                <span><i class="fa fa-map-marker"></i></span>
+                                <span>
+                                    <h6>Add new address</h6>
+                                    <button type="submit" class="add_new">add new</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -94,6 +128,12 @@
                         </button>
                     </h2>
                 </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <input type="text" name="datetimes"/>
+                    </div>
+                </div>
             </div>
 
             <!-- Choose payment method -->
@@ -107,7 +147,28 @@
                         </button>
                     </h2>
                 </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        To place your order now, login to your existing account or sign up.
+                        <div class="account_entry">
+                            <span class="login_btn">
+                                <button onclick="openLogform()">
+                                    <p>Have an account?</p>
+                                    <p>LOGIN</p>
+                                </button>
+                            </span>
+                            <span class="signup_btn">
+                                <button onclick="openSignform()">
+                                    <p>New to Creaseart?</p>
+                                    <p>SIGN UP</p>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
 
         <!-- Cart Checkout -->
@@ -256,6 +317,10 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript" src="js/vendorDetails.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="js/checkout.js"></script>
 </body>
 
 </html>
