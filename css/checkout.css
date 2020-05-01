@@ -8,6 +8,7 @@ body header {
 
 body header .vendor_list_nav_one h5 {
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 body .checkout_section {
@@ -58,6 +59,7 @@ body .checkout_section .accordion .card .card-header button {
   color: #000;
   font-weight: 700;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 body .checkout_section .accordion .card .card-header .collapsed {
@@ -83,6 +85,7 @@ body .checkout_section .accordion .card .card-body .account_entry .signup_btn bu
 body .checkout_section .accordion .card .card-body .account_entry .login_btn button p:last-child,
 body .checkout_section .accordion .card .card-body .account_entry .signup_btn button p:last-child {
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 body .checkout_section .accordion .card .card-body .account_entry .login_btn button {
@@ -101,11 +104,13 @@ body .checkout_section .detail_cart {
   padding: 3rem 1.75rem;
   -webkit-box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.16);
           box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.16);
+  height: 100%;
 }
 
 body .checkout_section .detail_cart h6 {
   font-weight: 700;
   font-size: 1.25rem;
+  text-transform: capitalize;
 }
 
 body .checkout_section .detail_cart table thead {
@@ -117,6 +122,7 @@ body .checkout_section .detail_cart table thead th {
   font-size: 16px;
   padding: 0.75rem 0;
   color: #646464;
+  text-transform: uppercase;
 }
 
 body .checkout_section .detail_cart table tbody tr:last-child {
@@ -126,6 +132,7 @@ body .checkout_section .detail_cart table tbody tr:last-child {
 body .checkout_section .detail_cart table tbody tr td {
   font-size: 14px;
   padding: 0.75rem 0;
+  text-transform: capitalize;
 }
 
 body .checkout_section .detail_cart table tbody tr td:nth-child(2) {
@@ -171,6 +178,7 @@ body .checkout_section .detail_cart table tfoot tr button {
   cursor: pointer;
   outline: none;
   width: 100%;
+  text-transform: capitalize;
 }
 
 body .checkout_section .detail_cart table tfoot tr:nth-child(2) th {
@@ -186,16 +194,19 @@ body .checkout_section .detail_cart table tfoot tr:last-child th {
   border: none;
   border-top: solid 3px #000;
   border-bottom: solid 3px #000;
+  text-transform: uppercase;
 }
 
 body .checkout_section .detail_cart table tfoot tr th {
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 body .checkout_section .detail_cart table tfoot tr td {
   font-size: 14px;
   padding-top: 0.5rem;
   color: #646464;
+  text-transform: capitalize;
 }
 
 #enter_coupon .modal-dialog .modal-content .modal-header button {
@@ -233,6 +244,11 @@ body .checkout_section .detail_cart table tfoot tr td {
   .checkout_section #accordionExample {
     width: unset;
   }
+  .checkout_section #accordionExample, body .checkout_section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body .checkout_section .detail_cart h6 {
     text-align: center;
   }
@@ -242,11 +258,6 @@ body .checkout_section .detail_cart table tfoot tr td {
 }
 
 @media (max-width: 600px) {
-  .checkout_section #accordionExample, body .checkout_section {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .checkout_section #accordionExample, body .checkout_section .detail_cart {
     width: 400px;
   }

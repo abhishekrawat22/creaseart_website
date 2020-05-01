@@ -135,6 +135,7 @@ Github: https://github.com/prevwong/awesome-select/
 }
 
 .awselect .back_face ul li a {
+  padding: 2px 30px !important;
   color: inherit;
   opacity: 0.8;
   float: left;

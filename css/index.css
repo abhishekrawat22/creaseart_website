@@ -109,6 +109,7 @@ body .header .overlay .overlay-content h4 {
   text-align: left;
   margin: 0;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 body .header .overlay .overlay-content .login-content {
@@ -145,6 +146,7 @@ body .header .overlay .overlay-content .login-content .input-div div h5 {
   font-size: 18px;
   -webkit-transition: .3s;
   transition: .3s;
+  text-transform: capitalize;
 }
 
 body .header .overlay .overlay-content .login-content .input-div div input {
@@ -394,6 +396,7 @@ body .header .header_content .text-box .search-box .btn-search {
   border: none;
   margin-left: -0.2em;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 body .header .header_content .text-box .popular_cities {
@@ -408,6 +411,7 @@ body .header .header_content .text-box .popular_cities {
 body .header .header_content .text-box .popular_cities p a {
   color: #B52421;
   font-size: 0.75rem;
+  text-transform: capitalize;
 }
 
 body .header .header_content .spinner-box {
@@ -447,6 +451,10 @@ body main .how_it_works h5 {
   text-align: center;
 }
 
+body main .how_it_works h3 {
+  text-transform: uppercase;
+}
+
 body main .how_it_works .how_it_works_section {
   margin-top: 2rem;
   display: -webkit-box;
@@ -482,6 +490,10 @@ body main .download_app {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body main .download_app h2 {
+  text-transform: capitalize;
 }
 
 body main .download_app .download_app_text {
@@ -536,6 +548,10 @@ body footer .footer_social_bar .footer_social_links a {
 body footer .footer_sections {
   margin-top: 2rem;
   border-bottom: solid 0.05rem #fff;
+}
+
+body footer .footer_sections .col-md h6 {
+  text-transform: capitalize;
 }
 
 body footer .footer_sections .col-md a {

@@ -108,6 +108,7 @@ body {
                     text-align: left;
                     margin: 0;
                     font-weight: 600;
+                    text-transform: capitalize;
                 }
 
                 .login-content {
@@ -136,9 +137,10 @@ body {
                                 left: 10px;
                                 top: 50%;
                                 transform: translateY(-50%);
-                                color: #B52421/*#363435*/;
+                                color: #B52421;
                                 font-size: 18px;
                                 transition: .3s;
+                                text-transform: capitalize;
                             }
 
                             input{
@@ -331,11 +333,9 @@ body {
                         padding: 20px 5px;
                         width: 450px;
                         border: none;
-                        // border-right: none 0px #fff;
                         font-size: 16px;
                         color: #ffa300;
                         cursor: text;
-                        // box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px rgba(0, 0, 0, 0.1);
                     }
     
                     .btn-search {
@@ -349,7 +349,7 @@ body {
                         border: none;
                         margin-left: -0.2em;
                         cursor: pointer;
-                        // box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), 0px -3px 15px rgba(0, 0, 0, 0.1);
+                        text-transform: capitalize;
                     }
                 }
 
@@ -361,6 +361,7 @@ body {
                         a{
                             color: #B52421;
                             font-size: 0.75rem;
+                            text-transform: capitalize;
                         }
                     }
                 }
@@ -414,6 +415,10 @@ body {
                 text-align: center;
             }
 
+            h3 {
+                text-transform: uppercase;
+            }
+
             .how_it_works_section {
                 margin-top: 2rem;
                 display: flex;
@@ -444,7 +449,10 @@ body {
             margin-top: 3rem;
             display: flex;
             justify-content: space-between;
-            // background-color: #F8F9FB;
+
+            h2 {
+                text-transform: capitalize;
+            }
             
             .download_app_text {
                 align-self: center;
@@ -501,6 +509,11 @@ body {
             border-bottom: solid 0.05rem #fff;
 
             .col-md {
+
+                h6 {
+                    text-transform: capitalize;
+                }
+                
                 a {
                     color: #fff;
                     font-size: 0.75rem;

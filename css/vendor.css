@@ -4,10 +4,12 @@ nav .breadcrumb {
 
 nav .breadcrumb li {
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 nav .breadcrumb li a {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .vendor_detail {
@@ -31,6 +33,7 @@ nav .breadcrumb li a {
 
 .vendor_detail .vendor_detail_banner .vendor_detail_summary {
   color: #fff;
+  text-transform: capitalize;
 }
 
 .vendor_detail .vendor_detail_banner .vendor_detail_summary div {
@@ -139,6 +142,7 @@ nav .breadcrumb li a {
 
 .vendor_detail .detail_service_cart .service_order #myTabContent table th {
   font-size: 12px;
+  text-transform: capitalize;
 }
 
 .vendor_detail .detail_service_cart .service_order #myTabContent table th:nth-child(3) {
@@ -147,6 +151,7 @@ nav .breadcrumb li a {
 
 .vendor_detail .detail_service_cart .service_order #myTabContent table td {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .vendor_detail .detail_service_cart .service_order #myTabContent table td:nth-child(3) {
@@ -190,6 +195,7 @@ nav .breadcrumb li a {
   font-size: 14px;
   padding: 0.75rem 0;
   color: #646464;
+  text-transform: uppercase;
 }
 
 .vendor_detail .detail_service_cart .detail_cart table tbody tr:last-child {
@@ -199,6 +205,7 @@ nav .breadcrumb li a {
 .vendor_detail .detail_service_cart .detail_cart table tbody tr td {
   font-size: 14px;
   padding: 0.75rem 0;
+  text-transform: capitalize;
 }
 
 .vendor_detail .detail_service_cart .detail_cart table tbody tr td:nth-child(2) {
@@ -243,11 +250,13 @@ nav .breadcrumb li a {
 
 .vendor_detail .detail_service_cart .detail_cart table tfoot tr th {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .vendor_detail .detail_service_cart .detail_cart table tfoot tr td {
   font-size: 14px;
   padding: 0.25rem 0;
+  text-transform: capitalize;
 }
 
 .vendor_detail .detail_service_cart .detail_cart table tfoot tr:last-child button {
@@ -259,6 +268,11 @@ nav .breadcrumb li a {
   color: #fff;
   border: none;
   padding: 0.75rem 5rem;
+  text-transform: uppercase;
+}
+
+.vendor_detail .add-on_services h6 {
+  text-transform: capitalize;
 }
 
 .vendor_detail .add-on_services .add-services {
@@ -282,6 +296,7 @@ nav .breadcrumb li a {
 .vendor_detail .add-on_services .add-services span p {
   margin-bottom: 0;
   margin-top: 0.25rem;
+  text-transform: capitalize;
 }
 
 .vendor_detail .add-on_services .add-services span button {
@@ -291,6 +306,7 @@ nav .breadcrumb li a {
   font-size: 14px;
   padding: 0.25rem 1rem;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1199px) {

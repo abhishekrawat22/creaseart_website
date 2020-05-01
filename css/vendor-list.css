@@ -89,6 +89,7 @@ body .vendor_list_nav .vendor_list_nav_two input[type=text]:focus {
 body .vendor_list_nav .vendor_list_nav_two span a {
   color: #282c3f;
   font-size: 0.75rem;
+  text-transform: capitalize;
 }
 
 body .vendor_list_nav .vendor_overlay .closebtn {
@@ -128,6 +129,7 @@ body .vendor_list_nav .overlay .overlay-content h4 {
   text-align: left;
   margin: 0;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 body .vendor_list_nav .overlay .overlay-content .login-content {
@@ -164,6 +166,7 @@ body .vendor_list_nav .overlay .overlay-content .login-content .input-div div h5
   font-size: 18px;
   -webkit-transition: .3s;
   transition: .3s;
+  text-transform: capitalize;
 }
 
 body .vendor_list_nav .overlay .overlay-content .login-content .input-div div input {
@@ -375,6 +378,7 @@ body main .vendor_list .row .card .vendor_about .vendor_service span,
 body main .vendor_list .row .card .vendor_about div span {
   font-size: 0.75rem;
   color: #666;
+  text-transform: capitalize;
 }
 
 body main .vendor_list .row .card .vendor_about div .vendor_rating {
