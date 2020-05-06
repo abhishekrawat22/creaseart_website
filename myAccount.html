@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor-list.css">
+    <link rel="stylesheet" type="text/css" href="css/myaccount.css">
+
+    <title>My Account : Creaseart</title>
+</head>
+
+<body>
+
+    <!-- Navigation header starts-->
+    <header class="vendor_list_nav">
+
+        <div class="vendor_list_nav_one">
+            <a href="index.html"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a>
+            <h5>My Account</h5>
+        </div>
+
+        <!-- Menu starts -->
+        <div id="myNav" class="vendor_list_nav_two vendor_overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Cross icon which will appear when login/sign up form appears from side bar -->
+            <div class="vendor_content">
+                <!-- Search within web page -->
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                </form>
+
+                <span><a href="#"><i class="fa fa-percent"></i> Offers</a></span>
+                <!-- Link to discounts offered by various vendors -->
+                <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span>
+                <!-- Help link related to the website -->
+                <span><a href="#" class="logged_in"><i class="fa fa-user"></i> Shakti Singh</a></span>
+                <span><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></span>
+            </div>
+        </div>
+        <span class="ham-icon" onclick="openNav()">&#9776;</span>
+        <!-- Hamburger icon which will appear in place of menu in mobile view -->
+        <!-- Menu ends -->
+        <!-- Navigation header ends-->
+    </header>
+
+    <main class="acount_detail">
+        <!-- Photo and details of the account holder -->
+
+        <section class="container">
+
+            <div class="account_info row">
+                <div class="account_tabs col-sm-4">
+                    <div class="account_profile">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="display_picture">
+                        <h6>Shakti Singh</h6>
+                        <p>Gurgaon, India</p>
+                    </div>
+                    <!-- account tabs -->
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="editprofile-tab" data-toggle="tab" href="#editprofile" role="tab"
+                                aria-controls="editprofile" aria-selected="true"><i class="fa fa-user"></i> Edit Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myorders-tab" data-toggle="tab" href="#myorders" role="tab"
+                                aria-controls="myorders" aria-selected="false"><i class="fa fa-shopping-cart"></i> My
+                                Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="manageaddress-tab" data-toggle="tab" href="#manageaddress" role="tab"
+                                aria-controls="manageaddress" aria-selected="false"><i class="fa fa-home"></i> Manage
+                                Address</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="managepayments-tab" data-toggle="tab" href="#managepayments" role="tab"
+                                aria-controls="managepayments" aria-selected="false"><i class="fa fa-credit-card"></i>
+                                Manage Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="couponsandoffers-tab" data-toggle="tab" href="#couponsandoffers"
+                                role="tab" aria-controls="couponsandoffers" aria-selected="false"><i class="fa fa-inr"></i> 
+                                Coupons & Offers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content bd bd-gray-300 bd-t-0 pd-20 col-sm-8" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="editprofile" role="tabpanel"
+                        aria-labelledby="editprofile-tab">
+
+                        <!-- Edit Profile content -->
+                        <h3>Edit Profile</h3>
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="text" name="phone" id="phone_number">
+                                <span><button type="submit">CHANGE</button></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mail">Email</label>
+                                <input type="email" name="mail" id="mail">
+                                <span><button type="submit">CHANGE</button></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assword">Password</label>
+                                <input type="text" name="password" id="password">
+                                <span><button type="submit">CHANGE</button></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="myorders" role="tabpanel" aria-labelledby="myorders-tab">
+
+                        <!-- My Orders Content -->
+                        <h3>My Orders</h3>
+
+                        <div class="order_list">
+                            <div class="order">
+                                <div class="order_header">
+                                    <span class="address">
+                                        <h4>Super Fine Dry Cleaners</h4>
+                                        <p>Sec 23, Gurgaon</p>
+                                    </span>
+                                    <span class="status_delivered">
+                                        <p>Delivered <i class="fa fa-check"></i></p>
+                                    </span>
+                                </div>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Items</th>
+                                            <td colspan="2" class="text-right">2 x Shirt, 2 x Jeans</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Date</th>
+                                            <td colspan="2" class="text-right">February 29, 2019 at 07:45 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total Order</th>
+                                            <td colspan="2" class="text-right">&#8377; 250</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th><a href="#" class="order_help"><i class="fa fa-question-circle"></i> Help</a></th>
+                                            <th><a href="#" class="order_rate"><i class="fa fa-star"></i> Rate this order</a></th>
+                                            <th><a href="#" class="order_view"><i class="fa fa-shopping-cart"></i> View Order</a></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </div>
+                            <div class="order">
+                                <div class="order_header">
+                                    <span class="address">
+                                        <h4>Super Fine Dry Cleaners</h4>
+                                        <p>Sec 23, Gurgaon</p>
+                                    </span>
+                                    <span class="status_cancelled">
+                                        <p>Cancelled <i class="fa fa-times"></i></p>
+                                    </span>
+                                </div>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Items</th>
+                                            <td colspan="2" class="text-right">2 x Shirt, 2 x Jeans</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Date</th>
+                                            <td colspan="2" class="text-right">February 29, 2019 at 07:45 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total Order</th>
+                                            <td colspan="2" class="text-right">&#8377; 250</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="2"><a href="#" class="order_help"><i class="fa fa-question-circle"></i> Help</a></th>
+                                            <th><a href="#" class="order_view"><i class="fa fa-shopping-cart"></i> View Order</a></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="order_show_more">
+                                <button type="submit" class="order_show_more_btn">SHOW MORE ORDERS</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="manageaddress" role="tabpanel" aria-labelledby="manageaddress-tab">
+
+                        <!-- Manage Address content -->
+                        <h3>Manage Address</h3>
+                        <div class="card-body">
+                            <div class="addresses">
+                                <!-- Home Address will show -->
+                                <div class="address">
+                                    <span><i class="fa fa-home"></i></span>
+                                    <span>
+                                        <h6>Home</h6>
+                                        <p class="home_address">701/5, Ravi Giri Boys PG, Patel Nagar, Sec-15, Gurugram, Haryana</p>
+                                        <span><a href="#" rel="noopener noreferrer" class="edit_address">Edit</a></span>
+                                        <span><a href="#" rel="noopener noreferrer" class="delete_address">Delete</a></span>
+                                    </span>
+                                </div>
+                                <!-- Work or other address will show -->
+                                <div class="address">
+                                    <span><i class="fa fa-suitcase"></i></span>
+                                    <span>
+                                        <h6>Work</h6>
+                                        <p class="work_address">5th Floor, Tower A, Spaze I Tech Park, Sohna Road, Sector 49, Gurugram, Haryana</p>
+                                        <span><a href="#" rel="noopener noreferrer" class="edit_address">Edit</a></span>
+                                        <span><a href="#" rel="noopener noreferrer" class="delete_address">Delete</a></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="managepayments" role="tabpanel" aria-labelledby="managepayments-tab">
+
+                        <!-- Manage Payments content -->
+                        <h3>Manage Payments</h3>
+                    </div>
+                    <div class="tab-pane fade" id="couponsandoffers" role="tabpanel"
+                        aria-labelledby="couponsandoffers-tab">
+
+                        <!-- Manage Payments content -->
+                        <h3>Coupons & Offers</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_social_bar row">
+                <a href="index.html" class="col-lg-10"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a>
+
+                <!-- Creaseart's social media links -->
+                <span class="footer_social_links col-lg-2">
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </span>
+            </div>
+            <div class="footer_sections row">
+                <div class="col-md">
+                    <h6>About Creaseart</h6>
+                    <p>Creaseart Application is an innovative and beneficial app designed by our company in an effort to
+                        modernise the laundry & dry-cleaning industry. It also offers the consumers to identify the
+                        right vendor for their cleaning needs.</p>
+                </div>
+                <div class="col-md">
+                    <h6>About Creaseart</h6>
+                    <h6>About Us</h6>
+                </div>
+                <div class="col-md">
+                    <h6>Contact Us</h6>
+                    <p><i class="fa fa-map-marker"></i> <a
+                            href="https://www.google.com/maps/search/512,+5th+Floor,+Tower+A,+Spaze+I+Tech+Park,+Sohna+Road,+Sector+49,+122018+Gurugram,+Haryana/@28.4132101,77.0409667,17z/data=!3m1!4b1"
+                            target="_blank">512,
+                            5th Floor, Tower A, Spaze I Tech Park, Sohna Road, Sector 49, 122018 Gurugram, Haryana</a>
+                    </p>
+                    <p><i class="fa fa-phone"></i> <a href="tel:+918102020271"> +91 81020 20271</a></p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@creaseart.com"> info@creaseart.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/vendorDetails.js"></script>
+
+</body>
+
+</html>

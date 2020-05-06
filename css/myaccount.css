@@ -1,0 +1,231 @@
+.vendor_list_nav .vendor_list_nav_two .logged_in {
+  color: #bc3935;
+}
+
+.account_info {
+  padding: 0 0 2rem;
+}
+
+.account_info .account_tabs {
+  -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+  padding: 0 2rem 2rem;
+}
+
+.account_info .account_tabs .account_profile {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+.account_info .account_tabs .account_profile img {
+  width: 6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.account_info .account_tabs .nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.account_info .account_tabs .nav .nav-item .nav-link {
+  font-size: 18px;
+  background-color: #fff;
+  color: #3a3a3a;
+  text-transform: capitalize;
+  border-bottom: solid 1.5px #ededed;
+  border-radius: 0;
+}
+
+.account_info .account_tabs .nav .nav-item .nav-link .fa {
+  background-color: transparent;
+  border-right: solid 1.5px #bcacac;
+  padding: 0.5rem;
+}
+
+.account_info .account_tabs .nav .nav-item .active {
+  background-color: #bc3935;
+  -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #fff;
+  border: none;
+}
+
+.account_info .account_tabs .nav .nav-item:last-child .nav-link {
+  border: none;
+}
+
+.account_info #myTabContent {
+  padding: 4rem 3rem;
+  -webkit-box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.16);
+}
+
+.account_info #myTabContent #editprofile form {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.account_info #myTabContent #editprofile form .form-group {
+  border-bottom: solid 1.5px #ededed;
+  padding-bottom: 1.5rem;
+  width: 310px;
+}
+
+.account_info #myTabContent #editprofile form .form-group label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.account_info #myTabContent #editprofile form .form-group input {
+  border: none;
+  font-size: 16px;
+  color: #ededed;
+}
+
+.account_info #myTabContent #editprofile form .form-group span button {
+  border: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: #bc3935;
+}
+
+.account_info #myTabContent #editprofile form .form-group:last-child {
+  border: none;
+}
+
+.account_info #myTabContent #myorders .order_list {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.account_info #myTabContent #myorders .order_list .order {
+  padding: 1rem;
+  -webkit-box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.2);
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header .address h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header .status_delivered {
+  color: #14df14;
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header .status_delivered .fa-check {
+  color: #fff;
+  background-color: #14df14;
+  padding: 0.1rem;
+  border-radius: 50%;
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header .status_cancelled {
+  color: #bc3935;
+}
+
+.account_info #myTabContent #myorders .order_list .order .order_header .status_cancelled .fa-times {
+  color: #fff;
+  background-color: #bc3935;
+  padding: 0.1rem 0.2rem;
+  border-radius: 50%;
+}
+
+.account_info #myTabContent #myorders .order_list .order table tr {
+  border-top: dotted 2px #ededed;
+}
+
+.account_info #myTabContent #myorders .order_list .order table tr td,
+.account_info #myTabContent #myorders .order_list .order table tr th {
+  font-size: 14px;
+  padding: 0.25rem;
+}
+
+.account_info #myTabContent #myorders .order_list .order table tr th {
+  color: #646464;
+}
+
+.account_info #myTabContent #myorders .order_list .order table tr th a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #bc3935;
+}
+
+.account_info #myTabContent #myorders .order_list .order_show_more .order_show_more_btn {
+  width: 100%;
+  background-color: #fff;
+  border: solid 2px #ededed;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.account_info #myTabContent #manageaddress .card-body {
+  padding: 0;
+}
+
+.account_info #myTabContent #manageaddress .card-body .addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address {
+  border: solid 1.5px #ededed;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address .fa {
+  margin-right: 1rem;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address h6 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address p {
+  color: #646464;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address p strong {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.account_info #myTabContent #manageaddress .card-body .address span .edit_address,
+.account_info #myTabContent #manageaddress .card-body .address span .delete_address {
+  color: #bc3935;
+  font-size: 16px;
+  margin-right: 2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=myaccount.css.map */
