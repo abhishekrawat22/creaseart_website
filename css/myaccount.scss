@@ -1,3 +1,4 @@
+
 .vendor_list_nav {
     .vendor_list_nav_two {
         .logged_in {
@@ -65,7 +66,7 @@
 
     #myTabContent {
 
-        padding: 4rem 3rem;
+        padding: 3rem 2rem;
         box-shadow: 2px 2px 7px -2px rgba(0, 0, 0, 0.16);
 
         #editprofile {
@@ -115,6 +116,7 @@
             .order_list {
                 display: grid;
                 row-gap: 2rem;
+                margin-top: 2rem;
 
                 .order {
                     padding: 1rem;
@@ -185,12 +187,145 @@
                     }
                 }
             }
+
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                overflow-x: hidden;
+                transition: 0.5s;
+                z-index: 9;
+                box-shadow: 0 4px 20px -3px rgba(0, 0, 0, 0.16);
+                padding-bottom: 5rem;
+    
+                .overlay-content {
+                    position: relative;
+                    top: 12%;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0 3rem;
+    
+                    h5 {
+                        text-align: left;
+                        margin: 0;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        font-size: 1.25rem;
+                    }
+
+                    p {
+                        color: #646464;
+                        text-align: left;
+                        margin-bottom: 0;
+                        margin-top: 0.5rem;
+                        text-transform: capitalize;
+
+                        strong {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .track_order {
+                        margin-top: 0.5rem;
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        .step_done {
+                            .fa {
+                                background-color: #bc3935;
+                                color: #fff;
+                                font-weight: 500;
+                                border-radius: 50%;
+                                border: solid 2px #bc3935;
+                                padding: 0.25rem;
+                            }
+
+                            p {
+                                color: #bc3935;
+                            }
+                        }
+
+                        .step_next {
+                            .fa {
+                                background-color: #fff;
+                                font-weight: 500;
+                                border-radius: 50%;
+                                border: solid 2px #000;
+                                padding: 0.25rem;
+                            }
+                        }
+
+                        hr {
+                            width: 100%;
+                            color: #646464;
+                        }
+                    }
+
+                    table {
+                        margin-top: 0.5rem;
+                        color: #646464;
+                        text-align: left;
+                        width: 100%;
+
+                        th,
+                        td {
+                            text-transform: capitalize;
+                            &:nth-child(2) {
+                                text-align: right;
+                            }
+                        }
+
+                        td {
+                            font-size: 14px;
+                        }
+
+                        tbody {
+                            margin-bottom: 1rem;
+                            th {
+                                font-size: 16px;
+                            }
+
+                            tr {
+                                border-top: dotted 1.5px #646464;
+                                border-bottom: dotted 1.5px #646464;
+
+                                &:first-child {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        tfoot {
+                            th {
+                                font-size: 17px;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+    
+                .closebtn {
+                    position: absolute;
+                    font-size: 40px;
+                    color: #646464;
+                    left: 10px;
+                }
+            }
         }
 
         #manageaddress {
 
             .card-body {
                 padding: 0;
+                margin-top: 2rem;
 
                 .addresses {
                     display: flex;
@@ -233,6 +368,93 @@
                             font-weight: 700;
                         }
                     }
+                }
+            }
+        }
+
+        #couponsandoffers {
+
+            .offers_cards {
+                display: grid;
+                grid: auto/ repeat(2, 1fr);
+                row-gap: 1rem;
+                column-gap: 1rem;
+                margin: 2rem 0;
+
+                .card {
+                    display: grid;
+                    row-gap: 0.5rem;
+                    padding: 1rem 0.5rem;
+                    border: none;
+                    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+
+                    .offer_by {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .offer_discount {
+                            color: #bc3935;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                        }
+
+                        .offer_by_logo {
+
+                            img {
+                                width: 2rem;
+                            }
+                        }
+                    }
+
+                    .offer_detail {
+
+                        p {
+                            color: #646464;
+                            font-size: 14px;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .offer_more_info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .copy_coupon,
+                        .more_Details {
+                            color: #bc3935;
+                            font-size: 14px;
+
+                            .coupon_btn {
+                                border: dotted 1.5px #646464;
+                                border-radius: 8px;
+                                color: #646464;
+                                padding: 0.25rem 1rem;
+                                background-color: #fff;
+                                outline: none;
+                                cursor: pointer;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .copy_coupon {
+                            p {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .offers_show_more {
+                .offers_show_more_btn {
+                    width: 100%;
+                    background-color: #fff;
+                    border: solid 2px #ededed;
+                    font-weight: 700;
+                    padding: 0.5rem 0;
+                    cursor: pointer;
                 }
             }
         }

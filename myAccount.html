@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/vendor-list.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/myaccount.css">
 
     <title>My Account : Creaseart</title>
@@ -154,7 +154,7 @@
                                         <tr>
                                             <th><a href="#" class="order_help"><i class="fa fa-question-circle"></i> Help</a></th>
                                             <th><a href="#" class="order_rate"><i class="fa fa-star"></i> Rate this order</a></th>
-                                            <th><a href="#" class="order_view"><i class="fa fa-shopping-cart"></i> View Order</a></th>
+                                            <th><a href="#" class="order_view" onclick="openOrder()"><i class="fa fa-shopping-cart"></i> View Order</a></th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -189,7 +189,7 @@
                                     <tfoot>
                                         <tr>
                                             <th colspan="2"><a href="#" class="order_help"><i class="fa fa-question-circle"></i> Help</a></th>
-                                            <th><a href="#" class="order_view"><i class="fa fa-shopping-cart"></i> View Order</a></th>
+                                            <th><a href="#" class="order_view" onclick="openOrder()"><i class="fa fa-shopping-cart"></i> View Order</a></th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -198,6 +198,122 @@
                                 <button type="submit" class="order_show_more_btn">SHOW MORE ORDERS</button>
                             </div>
                         </div>
+
+                        <!-- Order Details opens as a sidebar when clicked on View Order-->
+                        <div id="order_detail" class="overlay">
+
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeOrder()"">&times;</a>
+
+                            <div class="overlay-content">
+
+                                <h5>Order Summary</h5>
+
+                                <p><strong>Super Fine Dry Cleaners</strong></p>
+                                <p>Sec 23, Gurgoan</p>
+                                
+                                <p><strong>Pickup Time</strong></p>
+                                <p>Tue, 5 Feb, 10:00 am - 12:00 pm</p>
+
+                                <p><strong>Delivery Time</strong></p>
+                                <p>FRI, 8 Feb, 10:00 am - 12:00 pm</p>
+
+                                <hr>
+
+                                <h5>Order Status</h5>
+
+                                <div class="track_order">
+                                    <span class="step_done">
+                                        <i class="fa fa-check"></i>
+                                        <p>Confirm</p>
+                                    </span>
+
+                                    <hr>
+
+                                    <span class="step_next">
+                                        <i class="fa fa-check"></i>
+                                        <p>Pickup</p>
+                                    </span>
+
+                                    <hr>
+
+                                    <span class="step_next">
+                                        <i class="fa fa-check"></i>
+                                        <p>Laundry Process</p>
+                                    </span>
+
+                                    <hr>
+
+                                    <span class="step_next">
+                                        <i class="fa fa-check"></i>
+                                        <p>Delivered</p>
+                                    </span>
+
+                                </div>
+
+                                <hr>
+
+                                <h5>Your Order</h5>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Dryclean</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">2 x T-Shirt</td>
+                                            <td>&#8377; 120</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">2 x T-Shirt</td>
+                                            <td>&#8377; 120</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <th>Wash & Fold</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">2 x T-Shirt</td>
+                                            <td>&#8377; 120</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="2">Item Total</th>
+                                            <th>&#8377; 360</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Promo Discount</td>
+                                            <td>-&#8377; 60</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Tax (GST)</td>
+                                            <td>&#8377; 40</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Total</th>
+                                            <th>&#8377; 340</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <hr>
+
+                                <h5>Order Details</h5>
+
+                                <p><strong>Order Number</strong></p>
+                                <p>2359941</p>
+                                
+                                <p><strong>Payment Mode</strong></p>
+                                <p>Paid : Online Banking</p>
+
+                                <p><strong>Date</strong></p>
+                                <p>Feb 22, 2019 - 12:00 PM</p>
+
+                            </div>
+
+                        </div>
+                        <!-- Order Details ends -->
                     </div>
 
                     <div class="tab-pane fade" id="manageaddress" role="tabpanel" aria-labelledby="manageaddress-tab">
@@ -240,6 +356,66 @@
 
                         <!-- Manage Payments content -->
                         <h3>Coupons & Offers</h3>
+
+                        <div class="offers_cards">
+
+                            <!-- Cards showing various offers by different vendors on Laundry -->
+                            <div class="card">
+                                <div class="offer_by">
+                                    <span class="offer_discount">50% off</span>
+                                    <span class="offer_by_logo"><img src="img/creaseart_logo.png" alt="logo"></span>
+                                </div>
+                                <div class="offer_detail">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, optio!</p>
+                                </div>
+                                <div class="offer_more_info">
+                                    <span class="copy_coupon"><button class="coupon_btn">Copy</button> <p>FIRST50</p></span>
+                                    <span class="more_Details">more details</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="offer_by">
+                                    <span class="offer_discount">50% off</span>
+                                    <span class="offer_by_logo"><img src="img/creaseart_logo.png" alt="logo"></span>
+                                </div>
+                                <div class="offer_detail">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, optio!</p>
+                                </div>
+                                <div class="offer_more_info">
+                                    <span class="copy_coupon"><button class="coupon_btn">Copy</button> <p>FIRST50</p></span>
+                                    <span class="more_Details">more details</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="offer_by">
+                                    <span class="offer_discount">50% off</span>
+                                    <span class="offer_by_logo"><img src="img/creaseart_logo.png" alt="logo"></span>
+                                </div>
+                                <div class="offer_detail">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, optio!</p>
+                                </div>
+                                <div class="offer_more_info">
+                                    <span class="copy_coupon"><button class="coupon_btn">Copy</button> <p>FIRST50</p></span>
+                                    <span class="more_Details">more details</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="offer_by">
+                                    <span class="offer_discount">50% off</span>
+                                    <span class="offer_by_logo"><img src="img/creaseart_logo.png" alt="logo"></span>
+                                </div>
+                                <div class="offer_detail">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, optio!</p>
+                                </div>
+                                <div class="offer_more_info">
+                                    <span class="copy_coupon"><button class="coupon_btn">Copy</button> <p>FIRST50</p></span>
+                                    <span class="more_Details">more details</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offers_show_more">
+                            <button type="submit" class="offers_show_more_btn">VIEW MORE OFFERS</button>
+                        </div>
                     </div>
 
                 </div>
@@ -298,8 +474,6 @@
     <script type="text/javascript" src="js/jquery.js"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/vendorDetails.js"></script>
 
 </body>
 

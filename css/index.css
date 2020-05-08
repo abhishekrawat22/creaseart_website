@@ -260,6 +260,7 @@ body .header .overlay .closebtn {
   position: absolute;
   font-size: 40px;
   color: #646464;
+  left: 0.5rem;
 }
 
 body .header .header_content .text-box {

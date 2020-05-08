@@ -27,3 +27,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+// View Order
+function openOrder() {
+  document.getElementById("order_detail").style.width = "98vmin";
+}
+
+function closeOrder() {
+  document.getElementById("order_detail").style.width = "0";
+}
