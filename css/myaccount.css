@@ -1,3 +1,8 @@
+.vendor_list_nav .vendor_list_nav_one h5 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
 .vendor_list_nav .vendor_list_nav_two .logged_in {
   color: #bc3935;
 }
@@ -435,7 +440,7 @@
 .account_info #myTabContent #couponsandoffers .offers_cards .card .offer_more_info .copy_coupon .coupon_btn,
 .account_info #myTabContent #couponsandoffers .offers_cards .card .offer_more_info .more_Details .coupon_btn {
   border: dotted 1.5px #646464;
-  border-radius: 8px;
+  border-radius: 5px;
   color: #646464;
   padding: 0.25rem 1rem;
   background-color: #fff;
@@ -455,5 +460,92 @@
   font-weight: 700;
   padding: 0.5rem 0;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) and (min-width: 993px) {
+  body .vendor_list_nav .vendor_list_nav_two {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .acount_detail .container {
+    max-width: 100%;
+  }
+  .account_info .account_tabs {
+    padding: 0 1rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  body .acount_detail {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .account_info {
+    display: -ms-grid;
+    display: grid;
+  }
+  .account_info .account_tabs, .account_info #myTabContent {
+    max-width: 100%;
+  }
+  .account_info #myTabContent #editprofile form .form-group {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .account_info #myTabContent #couponsandoffers .offers_cards {
+    grid: auto/repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .account_info #myTabContent h3 {
+    font-size: 1.25rem;
+  }
+  .account_info #myTabContent #manageaddress .card-body .addresses {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 1rem;
+  }
+  .account_info #myTabContent #manageaddress .card-body .address {
+    width: unset;
+  }
+}
+
+@media (max-width: 414px) {
+  .vendor_list_nav .vendor_list_nav_one h5 {
+    font-size: 20px;
+  }
+  .account_info #myTabContent #editprofile form .form-group {
+    width: unset;
+  }
+  #myorders {
+    margin: 0 -1rem;
+  }
+  .account_info #myTabContent #myorders .overlay .overlay-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  div#manageaddress, div#couponsandoffers {
+    margin: 0 -1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  body .acount_detail {
+    padding: 3rem 0.5rem;
+  }
+  .account_info .account_tabs {
+    padding: 0 0rem 2rem;
+  }
+  div#couponsandoffers {
+    margin: 0 -1.5rem;
+  }
 }
 /*# sourceMappingURL=myaccount.css.map */
