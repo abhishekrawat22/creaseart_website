@@ -484,10 +484,10 @@ body {
     footer {
         background-color: #000;
         color: #fff;
-        padding: 3rem 0;
+        padding: 3rem 0 1rem;
 
         .footer_social_bar {
-            border-bottom: solid 0.05rem #fff;
+            border-bottom: solid 2px #1c1c1c;
             padding-bottom: 1rem;
 
             .logo {
@@ -500,26 +500,71 @@ body {
                 display: flex;
                 justify-content: space-between ;
                 a {
-                    color: #fff;
+                    color: #000;
+
+                    .fa {
+                        background-color: #f5b8bc;
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 2px;
+                    }
                 }
             }
         }
 
         .footer_sections {
             margin-top: 2rem;
-            border-bottom: solid 0.05rem #fff;
+            border-bottom: solid 2px #1c1c1c;
+            padding-bottom: 2rem;
 
             .col-md {
 
                 h6 {
                     text-transform: capitalize;
                 }
+
+                p {
+                    color: #e2dfe0;
+                    margin-bottom: 0.25rem;
+                }
                 
                 a {
-                    color: #fff;
+                    color: #e2dfe0;
+                    font-size: 0.75rem;
+                }
+
+                .download_app_link {
+                    img {
+                        &:nth-child(1) {
+                            width: 8.75rem;
+                            margin-left: 0.6rem;
+                        }
+
+                        &:nth-child(2) {
+                            width: 11rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_sections_extra {
+            padding: 1rem 0;
+            border-bottom: solid 2px #1c1c1c;
+
+            span {
+                margin-right: 1rem;
+
+                a {
+                    color: #e2dfe0;
                     font-size: 0.75rem;
                 }
             }
+        }
+
+        .disclaimer {
+            padding-top: 0.5rem;
+            color: #e2dfe0;
+            font-size: 0.5rem;   
         }
     }
 }
@@ -609,7 +654,6 @@ body {
     }
 
     body footer .footer_social_bar .footer_social_links a {
-        color: #fff;
         margin-right: 20px;
     }
 
@@ -659,6 +703,14 @@ body {
 
     body main .how_it_works h3, body main .download_app .download_app_text h2 {
         font-size: 1.5rem;
+    }
+
+    body footer .footer_sections .col-md:nth-child(2) {
+        margin: 1rem 0;
+    }
+
+    body footer .footer_sections .col-md .download_app_link img:nth-child(1) {
+        margin-left: unset;
     }
 }
 
@@ -714,6 +766,12 @@ body {
     }
 }
 
+@media (max-width: 414px) {
+    body footer .footer_sections .col-md .download_app_link img:nth-child(2) {
+        margin-left: -0.75rem;
+    }
+}
+
 @media (max-width: 384px) {
 
     body .header .header_content .text-box .heading-primary .heading-primary-main {
@@ -754,5 +812,11 @@ body {
 
     body .header .header_content .text-box .popular_cities p a {
         font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body footer .footer_sections_extra span {
+        margin-right: 0.75rem;
     }
 }

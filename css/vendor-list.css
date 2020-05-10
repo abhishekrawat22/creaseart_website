@@ -411,42 +411,6 @@ body main .vendor_list .row .card .vendor_continue a {
   color: #282c3f;
 }
 
-body footer {
-  background-color: #000;
-  color: #fff;
-  padding: 3rem 0;
-}
-
-body footer .footer_social_bar {
-  border-bottom: solid 0.05rem #fff;
-  padding-bottom: 1rem;
-}
-
-body footer .footer_social_bar .logo {
-  width: 3rem;
-}
-
-body footer .footer_social_bar .footer_social_links {
-  text-align: right;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body footer .footer_social_bar .footer_social_links a {
-  color: #fff;
-}
-
-body footer .footer_sections {
-  margin-top: 2rem;
-  border-bottom: solid 0.05rem #fff;
-}
-
 @media (max-width: 1199px) and (min-width: 992px) {
   .awselect .front_face .icon {
     right: -24px !important;

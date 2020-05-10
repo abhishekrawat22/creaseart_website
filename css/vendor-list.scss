@@ -372,36 +372,6 @@ body {
             }
         }
     }
-
-    footer {
-        background-color: #000;
-        color: #fff;
-        padding: 3rem 0;
-
-        .footer_social_bar {
-            border-bottom: solid 0.05rem #fff;
-            padding-bottom: 1rem;
-
-            .logo {
-                width: 3rem;
-            }
-
-            .footer_social_links {
-                text-align: right;
-                align-self: center;
-                display: flex;
-                justify-content: space-between ;
-                a {
-                    color: #fff;
-                }
-            }
-        }
-
-        .footer_sections {
-            margin-top: 2rem;
-            border-bottom: solid 0.05rem #fff;
-        }
-    }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {

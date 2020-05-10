@@ -473,7 +473,7 @@ nav .breadcrumb li a {
 
 @media (max-width: 375px) {
   .vendor_detail .detail_service_cart .service_order #myTabContent {
-    padding: 0 1rem;
+    padding: 1rem 1rem 0;
   }
 }
 
