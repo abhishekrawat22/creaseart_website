@@ -373,8 +373,14 @@ nav {
         display: flex;
         flex-direction: row !important;
         border-right: none;
+        border-bottom: solid 1.5px #ededed;
         padding-right: 0;
         margin: auto;
+    }
+
+    .vendor_detail .detail_service_cart .service_order #myTabContent {
+        padding: 1rem 2rem 0;
+        border-bottom: solid 1.5px #ededed;
     }
 
     .vendor_detail .detail_service_cart .service_order .nav .nav-item {
