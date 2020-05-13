@@ -1,0 +1,67 @@
+body main {
+  background-color: #f7f7f7;
+  padding: 2rem 5rem;
+}
+
+body main h1,
+body main h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body main h1 {
+  max-width: 40%;
+  border-bottom: solid 1.5px #ededed;
+  margin: auto;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+body main h4 {
+  margin-top: 1rem;
+  letter-spacing: 4px;
+  color: #bc3935;
+}
+
+body main .about_us-header img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 3rem 0;
+}
+
+body main .about_us-header p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #646464;
+}
+
+body main .about_why_us {
+  margin: 3rem 0;
+}
+
+body main .about_why_us .row {
+  margin-top: 2rem;
+}
+
+body main .about_why_us .row span {
+  padding: 3rem 2rem;
+  -webkit-box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  text-align: center;
+  max-width: 32%;
+  margin: 0 auto;
+}
+
+body main .about_why_us .row span h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+body main .about_why_us .row span p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: #646464;
+}
+/*# sourceMappingURL=about_us.css.map */
